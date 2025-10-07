@@ -1,0 +1,19 @@
+:root{
+  --bg: #fff; --fg:#111; --muted:#666;
+}
+.app { font-family: system-ui, sans-serif; padding: 20px; background: var(--bg); color: var(--fg); min-height:50vh; display:flex; flex-direction:column; }
+.app.dark { --bg:#0f1724; --fg:#e6eef6; --muted:#99a3b2; }
+header{ display:flex; justify-content:space-between; align-items:center; }
+input{ width:40%; padding:10px; font-size:1rem; border-radius:8px; border:1px solid #ccc;}
+.btns{ margin-top:10px; display:flex; gap:8%;}
+button{ padding:8px 12px; border-radius:8px;border: 1px solid #ccc; cursor: pointer; }
+.results{ margin-top:20px; display:grid; gap:12px; }
+.answer-box{ background: rgba(0,0,0,0.03); padding:12px; border-radius:8px;}
+.citations{ background: rgba(0,0,0,0.02); padding:12px; border-radius:8px;}
+.citation{ margin-bottom:8px; }
+.escalation{ margin-top:10px; }
+.error{ color:red; margin-top:10px; }
+.status{ margin-top:10px; color: var(--muted); font-style:italic; }
+@media (min-width: 700px){
+  main{ max-width: 800px; margin: 0; height: 80vh; overflow-y: auto;}
+}
