@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pydantic
+langchain
+openai
+pinecone-client
+faiss-cpu
+python-docx
+python-multipart
+PyPDF2
+docx2txt
+python-dotenv
+requests
+pytest
+httpx
+tqdm
